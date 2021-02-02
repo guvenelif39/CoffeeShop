@@ -10,10 +10,10 @@ namespace CoffeeShop
     {
         static void Main(string[] args)
         {
-            BaseCustomerManager customerManager = new NeroCustomerManager(new MernisServiceAdapter());
+            BaseCustomerManager customerManager = new NeroCustomerManager();
             customerManager.Save(new Customer
             {
-                DateOfBirth = new DateTime(1998, 10, 28),
+                DateOfBirth = new DateTime(1997, 10, 28),
                 FirstName = "Elif",
                 LastName = "Güven",
                 NationalityId = "11243974652",

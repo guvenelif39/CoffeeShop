@@ -26,6 +26,10 @@ namespace CoffeeShop.Concrete
         //    {
         //        throw new Exception("Not a valid person.");
         //    }
+        public override void Save(Customer customer)
+        {
+            base.Save(customer);
         }
+
     }
 }
